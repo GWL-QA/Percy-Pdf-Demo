@@ -9,9 +9,9 @@ describe('Capture Spanshot', () => {
         // by default grouping is disabled and is set to one
         const group_pages = 1; // group <9 pages in every spanshot
         const loadtime_per_page = 2000; // >1sec
-        const initial_loadtime = 40000; // >30 sec
+        const initial_loadtime = 80000; // >30 sec
 
-        await browser.url("http://localhost:8888/web/viewer.html?file=%2Ftest%2Fpdfs%2Flil%20news%20(Community).pdf");
+        await browser.url("http://localhost:8888/web/viewer.html?file=%2Ftest%2Fpdfs%2FExplore%20Entrepreneurship.pdf");
         await browser.pause(initial_loadtime);
         //get all the pages
         const pages = await $('.pdfViewer').$$('.page');
