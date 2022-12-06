@@ -12,9 +12,9 @@ public class method extends Base_Class {
       
         driver.get("https://dev-wev.pantheonsite.io/explore-entrepreneurship/");
        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("var element = document.getElementsByTagName('BODY')[0];"+"var parent = element.parentNode;"+"var wrapper = document.createElement('div');"+"wrapper.className='canvasWrapper';"+"parent.replaceChild(wrapper, element);"+"wrapper.appendChild(element);");
-    
-      percy.snapshot("Home", Arrays.asList(375,1600));
+js.executeScript("var element = document.getElementsByTagName('BODY')[0];"+"var parent = element.parentNode;"+"var wrapper = document.createElement('div');"+"wrapper.className='canvasWrapper';"+"parent.replaceChild(wrapper, element);"+"wrapper.appendChild(element);");
+
+percy.snapshot("1-page", Arrays.asList(375,1600),null,false,null,".canvasWrapper");
        
     
        
