@@ -14,8 +14,9 @@ public class method extends Base_Class {
        JavascriptExecutor js = (JavascriptExecutor) driver;
        js.executeScript("var element = document.getElementsByTagName('BODY')[0];"+"var parent = element.parentNode;"+"var wrapper = document.createElement('div');"+"wrapper.className='canvasWrapper';"+"parent.replaceChild(wrapper, element);"+"wrapper.appendChild(element);");
 
-       percy.snapshot("1-page", Arrays.asList(375,1600),null,false,".canvasWrapper");
-             
+       percy.snapshot("Home", Arrays.asList(375,1600),null,false,null,".canvasWrapper");
+          
+       
     
        
     }
