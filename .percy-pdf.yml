@@ -9,7 +9,7 @@ snapshot:
   widths:
     - 375
     - 1600
-  minHeight: 1024
+  
   
 discovery:
   allowedHostnames: []
